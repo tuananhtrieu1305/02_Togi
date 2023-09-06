@@ -1,0 +1,46 @@
+@use "../../abstracts";
+.subscribe {
+  &-container {
+    padding: 80px 0;
+    padding-right: 2px;
+  }
+  &-heading {
+    margin-top: 8px;
+    max-width: 410px;
+  }
+  &-list {
+    margin-top: 64px;
+    @include abstracts.grid(2, 28px);
+    row-gap: 40px;
+  }
+  &-item {
+    padding: 37px 72px 37px 28px;
+    border-radius: 8px;
+    border: 1px solid abstracts.$gray-light-color;
+    display: flex;
+    align-items: center;
+    gap: 0 24px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    &-heading {
+      font-size: 2rem;
+      line-height: normal;
+      margin-bottom: 8px;
+    }
+    &:hover {
+      background: abstracts.$gray-light-color;
+      .subscribe-icon {
+        background: abstracts.$primary-color;
+      }
+    }
+  }
+  &-icon {
+    @include abstracts.flexCenter;
+    flex-shrink: 0;
+    width: 96px;
+    height: 96px;
+    border-radius: 10px;
+    background: abstracts.$gray-light-color;
+    transition: all 0.2s linear;
+  }
+}

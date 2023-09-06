@@ -1,0 +1,43 @@
+@use "../../abstracts";
+.feature {
+  position: relative;
+  &-container {
+    padding: 80px 0 56px;
+    padding-right: 10px;
+  }
+  &-heading {
+    max-width: 409px;
+    margin-top: 8px;
+  }
+  &-list {
+    margin-top: 60px;
+    @include abstracts.grid(4, 60px);
+  }
+  &-item {
+    @include abstracts.flexCenter;
+    flex-direction: column;
+    gap: 24px 0;
+  }
+  &-content {
+    @include abstracts.flexCenter;
+    flex-direction: column;
+    gap: 8px 0;
+    strong {
+      font-size: 3.6rem;
+      font-weight: 700;
+    }
+    span {
+      max-width: 120px;
+      color: #b6b7bc;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+  &-decor {
+    position: absolute;
+    right: 0;
+    top: 126px;
+  }
+}

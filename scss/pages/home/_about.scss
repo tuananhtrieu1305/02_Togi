@@ -1,0 +1,28 @@
+@use "../../abstracts";
+.about {
+  &-container {
+    padding: 80px 0;
+    width: 1046px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0 138px;
+  }
+  &-media {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &-img-2 {
+    margin-top: -77px;
+    align-self: flex-start;
+    transform: translateX(-92px);
+  }
+  &-content {
+    max-width: 382px;
+    padding-top: 50px;
+  }
+  &-heading {
+    margin: 8px 0 28px;
+  }
+}

@@ -1,0 +1,38 @@
+@use "../../abstracts";
+.meet {
+  &-container {
+    padding: 80px 0;
+  }
+  &-sub-heading {
+    text-align: center;
+    display: block;
+  }
+  &-heading {
+    margin-top: 8px;
+    text-align: center;
+  }
+  &-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 83px;
+  }
+  &-img {
+    width: 426px;
+    height: 377px;
+    border-radius: 8px;
+    background: abstracts.$gray-light-color;
+    padding: 32px 26px;
+    img {
+      &:first-child {
+        margin-left: auto;
+      }
+      &:nth-child(2) {
+        margin: 20px 0;
+      }
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+  }
+}
