@@ -1,0 +1,84 @@
+@use "../../abstracts";
+.trial {
+  padding: 80px 0 100px;
+  &-container {
+    span {
+      font-size: 2rem;
+    }
+  }
+  .partners {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 0 56px;
+  }
+  &-card {
+    margin-top: 103px;
+    padding: 48px 93px 54px 60px;
+    border-radius: 12px;
+    background: abstracts.$gray-light-color;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &-content {
+      max-width: 386px;
+    }
+    &-heading {
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    &-btn {
+      margin-top: 40px;
+    }
+    &-media {
+      padding-top: 11px;
+    }
+    &-decor {
+      right: -53px;
+      bottom: -49px;
+      z-index: -1;
+      position: absolute;
+    }
+  }
+  // PC
+  @media screen and (min-width: 992px) {
+  }
+  // Tablet & Mobile
+  @media screen and (max-width: 991.98px) {
+  }
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .partners {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    padding: 0;
+    &-container {
+      padding: 35px 0 20px;
+      span {
+        font-size: 1.8rem;
+      }
+    }
+    .partners {
+      flex-direction: column;
+      gap: 40px 0;
+      align-items: flex-start;
+    }
+    &-card {
+      margin-top: 70px;
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+      flex-direction: column;
+      gap: 40px 0;
+      &-decor {
+        display: none;
+      }
+    }
+  }
+}

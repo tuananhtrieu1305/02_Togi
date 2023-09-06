@@ -1,1 +1,37 @@
-
+@use "../abstracts";
+.footer {
+  &-container {
+    width: 1240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    transform: translateX(20%);
+  }
+  &-link {
+    padding: 6px 16px;
+    display: block;
+    @extend .copyright;
+  }
+  .copyright {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    &-container {
+      padding: 20px 0 30px;
+      flex-direction: column;
+      gap: 20px 0;
+      align-items: flex-start;
+    }
+    &-list {
+      transform: translateX(0);
+      margin-left: -8px;
+    }
+  }
+}

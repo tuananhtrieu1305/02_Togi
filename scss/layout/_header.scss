@@ -52,7 +52,7 @@
     font-size: 1.5rem;
     line-height: normal;
     &:hover {
-      color: #fff;
+      color: abstracts.$primary-color;
     }
   }
   &-auth {
@@ -127,6 +127,79 @@
     cursor: pointer;
     &:hover {
       background: #1e75ff;
+    }
+  }
+  // PC
+  @media screen and (min-width: 992px) {
+    &-menu {
+      display: none;
+      &-drawer {
+        display: none;
+      }
+    }
+    .mobile-header {
+      display: none;
+    }
+  }
+  // Tablet & Mobile
+  @media screen and (max-width: 991.98px) {
+    .log-in-btn {
+      display: none;
+    }
+  }
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    &-menu {
+      display: none;
+      &-drawer {
+        display: none;
+      }
+    }
+  }
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    &-container {
+      justify-content: initial;
+    }
+    &-nav {
+      display: none;
+    }
+    &-auth {
+      margin-left: auto;
+    }
+    .get-btn {
+      font-size: 1rem;
+      min-width: 78px;
+      --height: 30px;
+      border-radius: 5px;
+    }
+    &-menu {
+      margin-left: 15px;
+      &-drawer {
+        position: fixed;
+        inset: 100px 0 0 0;
+        background: abstracts.$bg-color;
+        z-index: 3;
+        transform: translateX(-100%);
+        transition: all 0.2s linear;
+        .header-nav {
+          display: block;
+        }
+        .header-list {
+          flex-direction: column;
+          gap: 15px 0;
+          align-items: flex-start;
+        }
+        .header-product-list {
+          z-index: 3;
+        }
+        .header-company-list {
+          z-index: 3;
+        }
+      }
+      &-checkbox:checked ~ .header-menu-drawer {
+        transform: translateX(0);
+      }
     }
   }
 }

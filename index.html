@@ -91,7 +91,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-  <body style="height: 5000px">
+  <body>
+    <!-- PC Header -->
     <header class="header">
       <div class="header-container container">
         <a href="#">
@@ -101,6 +102,9 @@
             class="header-logo"
           />
         </a>
+        <label for="header-menu-checkbox" class="header-menu">
+          <img src="./assets/img/menu.svg" alt="" />
+        </label>
         <nav class="header-nav">
           <ul class="header-list">
             <li class="header-item">
@@ -176,6 +180,89 @@
           <button class="btn log-in-btn">Log in</button>
           <button class="btn get-btn">Get Started</button>
         </div>
+      </div>
+    </header>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name="header-menu-checkbox"
+        id="header-menu-checkbox"
+        class="header-menu-checkbox"
+        hidden
+      />
+      <div class="header-menu-drawer">
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="#products" class="header-link desc">
+                Products
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-product-list">
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="#pricing" class="header-link desc">Pricing</a>
+            </li>
+            <li class="header-item">
+              <a href="#company" class="header-link desc">
+                Company
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-company-list">
+                <div class="header-company-item desc">Careers</div>
+                <div class="header-company-item desc">About</div>
+                <div class="header-company-item desc">Contact</div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="#blog" class="header-link desc">Blog</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -582,5 +669,27 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <img srcset="./assets/img/logo.png 2x" alt="Togi" class="footer-logo" />
+        <nav class="footer-nav">
+          <ul class="footer-list">
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">Product</a>
+            </li>
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">Resources</a>
+            </li>
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">About</a>
+            </li>
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">Help</a>
+            </li>
+          </ul>
+        </nav>
+        <span class="desc copyright">© 2022 UIHUT | All Right Reserved</span>
+      </div>
+    </footer>
   </body>
 </html>

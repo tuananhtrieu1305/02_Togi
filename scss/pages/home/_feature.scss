@@ -40,4 +40,34 @@
     right: 0;
     top: 126px;
   }
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    &-container {
+      padding: 35px 0;
+    }
+    &-heading {
+      margin-top: 15px;
+    }
+    &-list {
+      margin-top: 40px;
+      flex-direction: column;
+      gap: 40px 0;
+      align-items: center;
+      justify-content: center;
+    }
+    &-item {
+      figure {
+        width: 52px;
+        height: 52px;
+      }
+    }
+    &-content {
+      span {
+        width: 200px;
+      }
+    }
+    &-decor {
+      display: none;
+    }
+  }
 }

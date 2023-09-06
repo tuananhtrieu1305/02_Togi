@@ -20,12 +20,22 @@ a {
   color: abstracts.$text-color;
   font-weight: 400;
   line-height: 150%;
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    font-size: 1.4rem;
+    line-height: 157.143%;
+  }
 }
 .heading {
   color: #fff;
   font-size: 3.4rem;
   font-weight: 500;
   line-height: 129.412%;
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    font-size: 3rem;
+    line-height: 126.667%;
+  }
 }
 .sub-heading {
   color: abstracts.$light-color;
