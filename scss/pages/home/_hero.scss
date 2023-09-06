@@ -1,0 +1,89 @@
+@use "../../abstracts";
+.hero {
+  padding-top: 19px;
+  &-container {
+    padding: 41px 0 80px;
+    width: 1240px;
+    padding-right: 78px;
+    display: flex;
+  }
+  &-left {
+    padding-top: 49px;
+    @include abstracts.flexCenter;
+    flex-direction: column;
+    span {
+      margin: 32px 0 20px;
+      writing-mode: vertical-rl;
+      transform: rotate(-180deg);
+      color: #d2efff;
+      font-size: 1.2rem;
+      line-height: normal;
+      letter-spacing: 6px;
+    }
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px 0;
+  }
+  .social {
+    @include abstracts.flexCenter;
+    border: 1px solid rgba(255, 151, 74, 0.2);
+    width: 34px;
+    height: 34px;
+    border-radius: 100rem;
+    transition: all 0.2s linear;
+    svg {
+      color: #d2efff;
+      transition: all 0.2s linear;
+    }
+    &:hover {
+      background: #ff974a;
+      svg {
+        color: #222222;
+      }
+    }
+  }
+  &-center {
+    padding: 15px 56px 0 96px;
+  }
+  &-heading {
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 115.625%;
+  }
+  &-desc {
+    margin-top: 12px;
+    max-width: 368px;
+  }
+  &-btn {
+    margin-top: 40px;
+  }
+  &-form {
+    margin-top: 41px;
+    max-width: 416px;
+    position: relative;
+  }
+  &-input {
+    outline: none;
+    border: 1px solid abstracts.$gray-light-color;
+    background: abstracts.$gray-light-color;
+    width: 100%;
+    color: abstracts.$text-color;
+    font-family: abstracts.$secondary-font;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 24px 150px 24px 16px;
+    border-radius: 8px;
+    &-function {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

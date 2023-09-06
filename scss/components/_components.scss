@@ -1,0 +1,18 @@
+@use "../abstracts";
+.btn {
+  --height: 58px;
+  height: var(--height);
+  line-height: var(--height);
+  min-width: 212px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+  background: abstracts.$primary-color;
+  outline: none;
+  @include abstracts.flexCenter;
+  border: 1px solid abstracts.$primary-color;
+  transition: all 0.2s linear;
+  &:hover {
+    opacity: 0.9;
+  }
+}

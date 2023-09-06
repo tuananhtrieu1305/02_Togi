@@ -1,0 +1,36 @@
+@use "../../abstracts";
+.capture {
+  &-container {
+    padding: 80px 0 75px;
+    width: 1190px;
+    display: flex;
+    gap: 0 188px;
+  }
+  &-media {
+    position: relative;
+    flex-shrink: 0;
+  }
+  &-decor {
+    position: absolute;
+    top: -43px;
+    left: -32px;
+    z-index: -1;
+  }
+  &-heading {
+    margin-top: 8px;
+    max-width: 262px;
+  }
+  &-desc {
+    &-1 {
+      max-width: 262px;
+      margin-top: 20px;
+    }
+    &-2 {
+      margin-top: 28px;
+      max-width: 380px;
+    }
+  }
+  &-btn {
+    margin-top: 48px;
+  }
+}
