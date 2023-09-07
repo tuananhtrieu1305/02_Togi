@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <!-- PC Header -->
+    <header class="header">
+      <div class="header-container container">
+        <a href="../index.html">
+          <img
+            srcset="../assets/img/logo.png 2x"
+            alt="Togi"
+            class="header-logo"
+          />
+        </a>
+        <label for="header-menu-checkbox" class="header-menu">
+          <img src="../assets/img/menu.svg" alt="" />
+        </label>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="../html/product.html" class="header-link desc">
+                Products
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-product-list">
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="../html/pricing.html" class="header-link desc"
+                >Pricing</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="../html/company.html" class="header-link desc">
+                Company
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-company-list">
+                <div class="header-company-item desc">Careers</div>
+                <div class="header-company-item desc">About</div>
+                <div class="header-company-item desc">Contact</div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="../html/blog.html" class="header-link desc active"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-auth">
+          <button class="btn log-in-btn">Log in</button>
+          <button class="btn get-btn">Get Started</button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name="header-menu-checkbox"
+        id="header-menu-checkbox"
+        class="header-menu-checkbox"
+        hidden
+      />
+      <div class="header-menu-drawer">
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="../html/product.html" class="header-link desc">
+                Products
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-product-list">
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="../html/pricing.html" class="header-link desc"
+                >Pricing</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="../html/company.html" class="header-link desc">
+                Company
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-company-list">
+                <div class="header-company-item desc">Careers</div>
+                <div class="header-company-item desc">About</div>
+                <div class="header-company-item desc">Contact</div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="../html/blog.html" class="header-link desc active"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="blog-feature">
+        <div class="container blog-feature-container">
+          <h1 class="heading blog-feature-heading">Togi Blogs</h1>
+          <p class="desc blog-feature-desc">
+            Stories from the community powering the internet’s visuals
+          </p>
+          <div class="blog-feature-block">
+            <h2 class="heading blog-feature-sub-heading">Featured</h2>
+            <div class="blog-feature-list">
+              <article class="blog-feature-item">
+                <a href="./article.html">
+                  <figure class="blog-feature-media">
+                    <img
+                      src="../assets/img/blog-img-1.png"
+                      alt="The Difference Between Web Design and Graphic Design | UIHUT"
+                      class="blog-feature-img"
+                    />
+                  </figure>
+                  <div class="blog-feature-content">
+                    <span class="desc">August 26, 2022 </span>
+                    <h3 class="heading">
+                      The Difference Between Web Design and Graphic Design |
+                      UIHUT
+                    </h3>
+                    <p class="desc">Reading time about 7 min</p>
+                  </div>
+                </a>
+              </article>
+              <article class="blog-feature-item">
+                <a href="./article.html">
+                  <figure class="blog-feature-media">
+                    <img
+                      src="../assets/img/blog-img-2.png"
+                      alt="How to Use a Color Wheel - The Magic Of Color Theory"
+                      class="blog-feature-img"
+                    />
+                  </figure>
+                  <div class="blog-feature-content">
+                    <span class="desc">August 12, 2022 </span>
+                    <h3 class="heading">
+                      How to Use a Color Wheel - The Magic Of Color Theory
+                    </h3>
+                    <p class="desc">Reading time about 5 min</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+          <div class="blog-feature-others">
+            <span class="heading blog-feature-sub-heading"
+              >Latest From the team</span
+            >
+            <div class="blog-feature-others-list">
+              <article class="blog-feature-others-item">
+                <figure class="blog-feature-others-media">
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to Use a Color Wheel The Magic Of Color..."
+                  />
+                </figure>
+                <div class="blog-feature-content">
+                  <span class="desc">August 26, 2022 </span>
+                  <h3 class="heading">
+                    How to Use a Color Wheel The Magic Of Color...
+                  </h3>
+                  <p class="desc">Reading time about 7 min</p>
+                </div>
+              </article>
+              <article class="blog-feature-others-item">
+                <figure class="blog-feature-others-media">
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to Use a Color Wheel The Magic Of Color..."
+                  />
+                </figure>
+                <div class="blog-feature-content">
+                  <span class="desc">August 26, 2022 </span>
+                  <h3 class="heading">
+                    How to Use a Color Wheel The Magic Of Color...
+                  </h3>
+                  <p class="desc">Reading time about 7 min</p>
+                </div>
+              </article>
+              <article class="blog-feature-others-item">
+                <figure class="blog-feature-others-media">
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to Use a Color Wheel The Magic Of Color..."
+                  />
+                </figure>
+                <div class="blog-feature-content">
+                  <span class="desc">August 26, 2022 </span>
+                  <h3 class="heading">
+                    How to Use a Color Wheel The Magic Of Color...
+                  </h3>
+                  <p class="desc">Reading time about 7 min</p>
+                </div>
+              </article>
+              <article class="blog-feature-others-item">
+                <figure class="blog-feature-others-media">
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to Use a Color Wheel The Magic Of Color..."
+                  />
+                </figure>
+                <div class="blog-feature-content">
+                  <span class="desc">August 26, 2022 </span>
+                  <h3 class="heading">
+                    How to Use a Color Wheel The Magic Of Color...
+                  </h3>
+                  <p class="desc">Reading time about 7 min</p>
+                </div>
+              </article>
+              <article class="blog-feature-others-item">
+                <figure class="blog-feature-others-media">
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to Use a Color Wheel The Magic Of Color..."
+                  />
+                </figure>
+                <div class="blog-feature-content">
+                  <span class="desc">August 26, 2022 </span>
+                  <h3 class="heading">
+                    How to Use a Color Wheel The Magic Of Color...
+                  </h3>
+                  <p class="desc">Reading time about 7 min</p>
+                </div>
+              </article>
+              <article class="blog-feature-others-item">
+                <figure class="blog-feature-others-media">
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to Use a Color Wheel The Magic Of Color..."
+                  />
+                </figure>
+                <div class="blog-feature-content">
+                  <span class="desc">August 26, 2022 </span>
+                  <h3 class="heading">
+                    How to Use a Color Wheel The Magic Of Color...
+                  </h3>
+                  <p class="desc">Reading time about 7 min</p>
+                </div>
+              </article>
+              <article class="blog-feature-others-item">
+                <figure class="blog-feature-others-media">
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to Use a Color Wheel The Magic Of Color..."
+                  />
+                </figure>
+                <div class="blog-feature-content">
+                  <span class="desc">August 26, 2022 </span>
+                  <h3 class="heading">
+                    How to Use a Color Wheel The Magic Of Color...
+                  </h3>
+                  <p class="desc">Reading time about 7 min</p>
+                </div>
+              </article>
+              <article class="blog-feature-others-item">
+                <figure class="blog-feature-others-media">
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to Use a Color Wheel The Magic Of Color..."
+                  />
+                </figure>
+                <div class="blog-feature-content">
+                  <span class="desc">August 26, 2022 </span>
+                  <h3 class="heading">
+                    How to Use a Color Wheel The Magic Of Color...
+                  </h3>
+                  <p class="desc">Reading time about 7 min</p>
+                </div>
+              </article>
+              <article class="blog-feature-others-item">
+                <figure class="blog-feature-others-media">
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to Use a Color Wheel The Magic Of Color..."
+                  />
+                </figure>
+                <div class="blog-feature-content">
+                  <span class="desc">August 26, 2022 </span>
+                  <h3 class="heading">
+                    How to Use a Color Wheel The Magic Of Color...
+                  </h3>
+                  <p class="desc">Reading time about 7 min</p>
+                </div>
+              </article>
+              <article class="blog-feature-others-item">
+                <figure class="blog-feature-others-media">
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to Use a Color Wheel The Magic Of Color..."
+                  />
+                </figure>
+                <div class="blog-feature-content">
+                  <span class="desc">August 26, 2022 </span>
+                  <h3 class="heading">
+                    How to Use a Color Wheel The Magic Of Color...
+                  </h3>
+                  <p class="desc">Reading time about 7 min</p>
+                </div>
+              </article>
+              <article class="blog-feature-others-item">
+                <figure class="blog-feature-others-media">
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to Use a Color Wheel The Magic Of Color..."
+                  />
+                </figure>
+                <div class="blog-feature-content">
+                  <span class="desc">August 26, 2022 </span>
+                  <h3 class="heading">
+                    How to Use a Color Wheel The Magic Of Color...
+                  </h3>
+                  <p class="desc">Reading time about 7 min</p>
+                </div>
+              </article>
+              <article class="blog-feature-others-item">
+                <figure class="blog-feature-others-media">
+                  <img
+                    src="https://source.unsplash.com/random"
+                    alt="How to Use a Color Wheel The Magic Of Color..."
+                  />
+                </figure>
+                <div class="blog-feature-content">
+                  <span class="desc">August 26, 2022 </span>
+                  <h3 class="heading">
+                    How to Use a Color Wheel The Magic Of Color...
+                  </h3>
+                  <p class="desc">Reading time about 7 min</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="btn blog-feature-btn">More</button>
+        </div>
+      </section>
+      <section class="trial">
+        <div class="container trial-container">
+          <span class="heading">Standards & Technology Trusted By:</span>
+          <div class="partners">
+            <img src="../assets/img/partner-1.svg" alt="" />
+            <img src="../assets/img/partner-2.svg" alt="" />
+            <img src="../assets/img/partner-3.svg" alt="" />
+            <img src="../assets/img/partner-4.svg" alt="" />
+            <img src="../assets/img/partner-5.svg" alt="" />
+          </div>
+          <div class="trial-card">
+            <div class="trial-card-content">
+              <h2 class="heading trial-card-heading">
+                Should we design your first popup?
+              </h2>
+              <p class="desc trial-card-desc">
+                Pick a template, customize as you need, and integrate with your
+                other marketing tools.
+              </p>
+              <button class="btn trial-card-btn">Start your free trial</button>
+            </div>
+            <figure class="trial-card-media">
+              <img
+                srcset="../assets/img/trial-img.png 2x"
+                alt="Should we design your first popup?"
+              />
+            </figure>
+            <figure class="trial-card-decor">
+              <img srcset="../assets/img/trial-decor.png 2x" alt="" />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <img
+          srcset="../assets/img/logo.png 2x"
+          alt="Togi"
+          class="footer-logo"
+        />
+        <nav class="footer-nav">
+          <ul class="footer-list">
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">Product</a>
+            </li>
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">Resources</a>
+            </li>
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">About</a>
+            </li>
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">Help</a>
+            </li>
+          </ul>
+        </nav>
+        <span class="desc copyright">© 2022 UIHUT | All Right Reserved</span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+@use "../../abstracts";
+.article {
+  &-container {
+    padding: 109px 0 100px;
+    width: 1170px;
+  }
+  &-sub-heading {
+    text-align: center;
+    display: block;
+  }
+  &-heading {
+    margin-top: 80px;
+    font-size: 6.4rem;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+  &-desc {
+    margin-top: 25px;
+    text-align: center;
+  }
+  &-author {
+    margin-top: 80px;
+    @include abstracts.flexCenter;
+    gap: 0 10px;
+    &-icon {
+      width: 38px;
+      height: 38px;
+      img {
+        border-radius: 100rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    span {
+      font-size: 1.4rem;
+    }
+  }
+  &-img {
+    margin-top: 80px;
+    height: 781px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+  &-content {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    strong {
+      font-size: 1.8rem;
+    }
+  }
+  &-desc-wrap {
+    padding: 40px 0 50px;
+    gap: 30px 0;
+    &-1 {
+      padding-top: 52px;
+    }
+  }
+  &-sub-img {
+    padding: 0 58px;
+    @include abstracts.grid(3, 30px);
+    img {
+      width: 327px;
+      height: 279px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+  &-part-heading {
+    font-size: 3.4rem;
+    padding-left: 65px;
+    &-1 {
+      margin-top: 100px;
+    }
+  }
+  &-cta {
+    margin-top: 50px;
+    span {
+      text-align: center;
+      font-size: 2.2rem;
+      display: block;
+    }
+  }
+  &-socials {
+    margin-top: 30px;
+    @include abstracts.flexCenter;
+    gap: 0 20px;
+    margin-bottom: 100px;
+  }
+  .blog-feature-others-list {
+    padding: 0 99px;
+  }
+  // PC
+  @media screen and (min-width: 992px) {
+  }
+  // Tablet & Mobile
+  @media screen and (max-width: 991.98px) {
+  }
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    &-sub-img {
+      @include abstracts.grid(2, 30px);
+      padding: 0 42px;
+    }
+  }
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    &-container {
+      padding: 30px 0 35px;
+    }
+    &-sub-heading {
+      font-size: 1.6rem;
+    }
+    &-heading {
+      margin-top: 20px;
+      font-size: 3rem;
+      line-height: 126.667%;
+      letter-spacing: 0;
+    }
+    &-desc {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      line-height: 150%;
+    }
+    &-author {
+      margin-top: 30px;
+    }
+    &-img {
+      margin-top: 50px;
+      height: 223.62px;
+    }
+    &-desc-wrap {
+      padding: 20px 0 25px;
+      &-1 {
+        padding-top: 30px;
+      }
+      &-2 {
+        display: none;
+      }
+    }
+    &-content {
+      font-size: 1.2rem;
+      line-height: 150%;
+      padding-bottom: 15px;
+    }
+    &-sub-img {
+      @include abstracts.grid(1, 0);
+      padding: 0;
+      img {
+        &:nth-child(2) {
+          display: none;
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+    &-part-heading {
+      margin-top: 50px;
+      padding: 0;
+      font-size: 3rem;
+      &-2 {
+        display: none;
+      }
+    }
+    &-cta {
+      margin-top: 45px;
+    }
+    &-socials {
+      margin-bottom: 70px;
+    }
+    .blog-feature-others-list {
+      padding: 0 7px;
+    }
+  }
+}
