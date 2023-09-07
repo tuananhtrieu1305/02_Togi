@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <!-- PC Header -->
+    <header class="header">
+      <div class="header-container container">
+        <a href="../index.html">
+          <img
+            srcset="../assets/img/logo.png 2x"
+            alt="Togi"
+            class="header-logo"
+          />
+        </a>
+        <label for="header-menu-checkbox" class="header-menu">
+          <img src="../assets/img/menu.svg" alt="" />
+        </label>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="#" class="header-link desc active">
+                Products
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-product-list">
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="../html/pricing.html" class="header-link desc"
+                >Pricing</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="../html/company.html" class="header-link desc">
+                Company
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-company-list">
+                <div class="header-company-item desc">Careers</div>
+                <div class="header-company-item desc">About</div>
+                <div class="header-company-item desc">Contact</div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="../html/blog.html" class="header-link desc">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-auth">
+          <button class="btn log-in-btn">Log in</button>
+          <button class="btn get-btn">Get Started</button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name="header-menu-checkbox"
+        id="header-menu-checkbox"
+        class="header-menu-checkbox"
+        hidden
+      />
+      <div class="header-menu-drawer">
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="../html/product.html" class="header-link desc active">
+                Products
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-product-list">
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="../html/pricing.html" class="header-link desc"
+                >Pricing</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="../html/company.html" class="header-link desc">
+                Company
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-company-list">
+                <div class="header-company-item desc">Careers</div>
+                <div class="header-company-item desc">About</div>
+                <div class="header-company-item desc">Contact</div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="../html/blog.html" class="header-link desc">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="product-hero">
+        <div class="container product-hero-container">
+          <h1 class="heading product-hero-heading">
+            Design beautiful emails, fast.
+          </h1>
+          <p class="desc product-hero-desc">
+            Perfect for freelance designers, marketing teams & agencies.
+          </p>
+          <button class="btn product-hero-btn">Start Design</button>
+        </div>
+      </section>
+      <section class="product-feature">
+        <div class="container product-feature-container">
+          <section class="product-feature-block">
+            <figure class="product-feature-media">
+              <img
+                srcset="../assets/img/capture-img.png 2x"
+                alt="Reduce email production time with smart design tools"
+                class="product-feature-img"
+              />
+              <img
+                srcset="../assets/img/capture-decor.png 2x"
+                alt=""
+                class="product-feature-decor"
+              />
+            </figure>
+            <section class="product-feature-content">
+              <h2 class="heading product-feature-heading">
+                Reduce email production time with smart design tools
+              </h2>
+              <p class="desc product-feature-desc">
+                Create emails with great design flexibility and little effort.
+                Save custom templates and blocks. Tag, search, & organize
+                campaigns for different projects and brands.
+              </p>
+              <button class="btn product-feature-btn">Start Designing</button>
+            </section>
+          </section>
+          <section class="product-feature-block">
+            <section class="product-feature-content">
+              <h2 class="heading product-feature-heading">
+                Better team collaboration
+              </h2>
+              <p class="desc product-feature-desc">
+                Add new users and set their role to control what they can and
+                cannot do. Like disallowing edits to portions of a message,
+                preventing asset removal, or restricting access to certain
+                clients.
+              </p>
+              <button class="btn product-feature-btn">Try It Today</button>
+            </section>
+            <figure class="product-feature-media">
+              <img
+                srcset="../assets/img/about-img-1.png 2x"
+                alt="Reduce email production time with smart design tools"
+                class="product-feature-img-1"
+              />
+              <img
+                srcset="../assets/img/about-img-2.png 2x"
+                alt=""
+                class="product-feature-img-2"
+              />
+            </figure>
+          </section>
+          <section class="product-feature-block">
+            <figure class="product-feature-media">
+              <img
+                srcset="../assets/img/capture-img.png 2x"
+                alt="Reduce email production time with smart design tools"
+                class="product-feature-img"
+              />
+              <img
+                srcset="../assets/img/capture-decor.png 2x"
+                alt=""
+                class="product-feature-decor"
+              />
+            </figure>
+            <section class="product-feature-content">
+              <h2 class="heading product-feature-heading">
+                Reduce email production time with smart design tools
+              </h2>
+              <p class="desc product-feature-desc">
+                Create emails with great design flexibility and little effort.
+                Save custom templates and blocks. Tag, search, & organize
+                campaigns for different projects and brands.
+              </p>
+              <button class="btn product-feature-btn">Start Designing</button>
+            </section>
+          </section>
+          <section class="product-feature-block">
+            <section class="product-feature-content">
+              <h2 class="heading product-feature-heading">
+                Better team collaboration
+              </h2>
+              <p class="desc product-feature-desc">
+                Add new users and set their role to control what they can and
+                cannot do. Like disallowing edits to portions of a message,
+                preventing asset removal, or restricting access to certain
+                clients.
+              </p>
+              <button class="btn product-feature-btn">Try It Today</button>
+            </section>
+            <figure class="product-feature-media">
+              <img
+                srcset="../assets/img/about-img-1.png 2x"
+                alt="Reduce email production time with smart design tools"
+                class="product-feature-img-1"
+              />
+              <img
+                srcset="../assets/img/about-img-2.png 2x"
+                alt=""
+                class="product-feature-img-2"
+              />
+            </figure>
+          </section>
+        </div>
+      </section>
+      <section class="app">
+        <div class="container app-container">
+          <h2 class="heading app-heading">
+            Direct export to many ESPs Mailchimp, SendGrid, HubSpot, etc.
+          </h2>
+          <p class="desc app-desc">
+            Push your messages directly to a growing list of email programs.
+            Connect your account, select the ESP, & export with one click.
+          </p>
+          <div class="app-list">
+            <a href="#!" class="app-item">
+              <img src="../assets/img/aweber.svg" alt="AWeber" />
+              <span class="desc">AWeber</span>
+            </a>
+            <a href="#!" class="app-item">
+              <img src="../assets/img/active.svg" alt="ActiveCampaign" />
+              <span class="desc">ActiveCampaign</span>
+            </a>
+            <a href="#!" class="app-item">
+              <img src="../assets/img/amazon.svg" alt="Amazon SES" />
+              <span class="desc">Amazon SES</span>
+            </a>
+            <a href="#!" class="app-item">
+              <img src="../assets/img/email.svg" alt="Benchmark Email" />
+              <span class="desc">Benchmark Email</span>
+            </a>
+            <a href="#!" class="app-item">
+              <img src="../assets/img/monitor.svg" alt="Campaign Monitor" />
+              <span class="desc">Campaign Monitor</span>
+            </a>
+            <a href="#!" class="app-item">
+              <img src="../assets/img/clicksend.svg" alt="Clicksend" />
+              <span class="desc">Clicksend</span>
+            </a>
+            <a href="#!" class="app-item">
+              <img src="../assets/img/contact.svg" alt="Constant Contact" />
+              <span class="desc">Constant Contact</span>
+            </a>
+            <a href="#!" class="app-item">
+              <img src="../assets/img/getrespone.svg" alt="GetResponse" />
+              <span class="desc">GetResponse</span>
+            </a>
+            <a href="#!" class="app-item">
+              <img src="../assets/img/gmail.svg" alt="Gmail" />
+              <span class="desc">Gmail</span>
+            </a>
+            <a href="#!" class="app-item">
+              <img src="../assets/img/hubspot.svg" alt="Hubspot" />
+              <span class="desc">Hubspot</span>
+            </a>
+            <a href="#!" class="app-item">
+              <img src="../assets/img/klaviyo.svg" alt="Klaviyo" />
+              <span class="desc">Klaviyo</span>
+            </a>
+            <a href="#!" class="app-item">
+              <img src="../assets/img/mailchimp.svg" alt="Mailchimp" />
+              <span class="desc">Mailchimp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="trial">
+        <div class="container trial-container">
+          <span class="heading">Standards & Technology Trusted By:</span>
+          <div class="partners">
+            <img src="../assets/img/partner-1.svg" alt="" />
+            <img src="../assets/img/partner-2.svg" alt="" />
+            <img src="../assets/img/partner-3.svg" alt="" />
+            <img src="../assets/img/partner-4.svg" alt="" />
+            <img src="../assets/img/partner-5.svg" alt="" />
+          </div>
+          <div class="trial-card">
+            <div class="trial-card-content">
+              <h2 class="heading trial-card-heading">
+                Should we design your first popup?
+              </h2>
+              <p class="desc trial-card-desc">
+                Pick a template, customize as you need, and integrate with your
+                other marketing tools.
+              </p>
+              <button class="btn trial-card-btn">Start your free trial</button>
+            </div>
+            <figure class="trial-card-media">
+              <img
+                srcset="../assets/img/trial-img.png 2x"
+                alt="Should we design your first popup?"
+              />
+            </figure>
+            <figure class="trial-card-decor">
+              <img srcset="../assets/img/trial-decor.png 2x" alt="" />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <img
+          srcset="../assets/img/logo.png 2x"
+          alt="Togi"
+          class="footer-logo"
+        />
+        <nav class="footer-nav">
+          <ul class="footer-list">
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">Product</a>
+            </li>
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">Resources</a>
+            </li>
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">About</a>
+            </li>
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">Help</a>
+            </li>
+          </ul>
+        </nav>
+        <span class="desc copyright">© 2022 UIHUT | All Right Reserved</span>
+      </div>
+    </footer>
+  </body>
+</html>

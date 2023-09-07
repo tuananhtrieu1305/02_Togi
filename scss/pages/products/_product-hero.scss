@@ -1,0 +1,42 @@
+@use "../../abstracts";
+.product-hero {
+  &-container {
+    padding: 75px 0 100px;
+    display: block;
+    text-align: center;
+  }
+  &-heading {
+    font-size: 6.4rem;
+    font-weight: 700;
+  }
+  &-desc {
+    margin-top: 20px;
+    max-width: initial;
+  }
+  &-btn {
+    margin: 40px auto 0 auto;
+    min-width: 153px;
+  }
+  // Mobile
+  @media screen and (max-width: 767.98px) {
+    &-container {
+      padding: 30px 0 35px;
+    }
+    &-heading {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 126.667%;
+    }
+    &-desc {
+      margin-top: 15px;
+      font-size: 1.2rem;
+    }
+    &-btn {
+      margin-top: 20px;
+      min-width: 104px;
+      --height: 40px;
+      font-size: 1.1rem;
+    }
+  }
+}

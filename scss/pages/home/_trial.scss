@@ -40,12 +40,6 @@
       position: absolute;
     }
   }
-  // PC
-  @media screen and (min-width: 992px) {
-  }
-  // Tablet & Mobile
-  @media screen and (max-width: 991.98px) {
-  }
   // Tablet
   @media screen and (min-width: 768px) and (max-width: 991.98px) {
     .partners {
@@ -53,6 +47,9 @@
       align-items: center;
       justify-content: center;
       gap: 30px;
+    }
+    &-card-decor {
+      display: none;
     }
   }
   // Mobile

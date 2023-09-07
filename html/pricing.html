@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <!-- PC Header -->
+    <header class="header">
+      <div class="header-container container">
+        <a href="../index.html">
+          <img
+            srcset="../assets/img/logo.png 2x"
+            alt="Togi"
+            class="header-logo"
+          />
+        </a>
+        <label for="header-menu-checkbox" class="header-menu">
+          <img src="../assets/img/menu.svg" alt="" />
+        </label>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="../html/product.html" class="header-link desc">
+                Products
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-product-list">
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="../html/pricing.html" class="header-link desc active"
+                >Pricing</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="../html/company.html" class="header-link desc">
+                Company
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-company-list">
+                <div class="header-company-item desc">Careers</div>
+                <div class="header-company-item desc">About</div>
+                <div class="header-company-item desc">Contact</div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="../html/blog.html" class="header-link desc">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-auth">
+          <button class="btn log-in-btn">Log in</button>
+          <button class="btn get-btn">Get Started</button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name="header-menu-checkbox"
+        id="header-menu-checkbox"
+        class="header-menu-checkbox"
+        hidden
+      />
+      <div class="header-menu-drawer">
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="../html/product.html" class="header-link desc">
+                Products
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-product-list">
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+                <div class="header-product-item">
+                  <h3 class="sub-heading">Inlayer Studio</h3>
+                  <span class="desc"
+                    >Full featured email design studio for designers and
+                    agencies</span
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="../html/pricing.html" class="header-link desc active"
+                >Pricing</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="../html/company.html" class="header-link desc">
+                Company
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M10.2 3.9L6 8.1L1.8 3.9"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <div class="header-company-list">
+                <div class="header-company-item desc">Careers</div>
+                <div class="header-company-item desc">About</div>
+                <div class="header-company-item desc">Contact</div>
+              </div>
+            </li>
+            <li class="header-item">
+              <a href="../html/blog.html" class="header-link desc">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="plan">
+        <div class="container plan-container">
+          <h1 class="heading plan-heading">
+            We've got a plan that's perfect for you
+          </h1>
+          <div class="plan-switch-wrap">
+            <input
+              type="checkbox"
+              name="plan-checkbox"
+              id="plan-checkbox"
+              class="plan-switch-input"
+              hidden
+            />
+            <label for="plan-checkbox" class="plan-switch-label">
+              <span>Monthly billing</span>
+              <span>Annual billing</span>
+            </label>
+          </div>
+          <div class="plan-list">
+            <div class="plan-item">
+              <h3 class="heading plan-item-heading">Basic plan</h3>
+              <span class="plan-price">
+                <strong class="heading">$10</strong>
+                <span class="plan-price-desc">
+                  <span class="desc">per user</span>
+                  <span class="desc">per month</span>
+                </span>
+              </span>
+              <span class="plan-item-desc desc"
+                >Basic features for up to 10 users.</span
+              >
+              <button class="btn plan-btn">Get started</button>
+              <div class="plan-feature">
+                <h4 class="heading plan-feature-heading">FEATURES</h4>
+                <p class="desc plan-feature-desc">
+                  Everything in our free plan plus..
+                </p>
+                <div class="plan-feature-list">
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      Access to basic features
+                    </p>
+                  </div>
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      Basic reporting and analytics
+                    </p>
+                  </div>
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      Up to 10 individual users
+                    </p>
+                  </div>
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      20GB individual data each user
+                    </p>
+                  </div>
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      Basic chat and email support
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="plan-item">
+              <h3 class="heading plan-item-heading">Business plan</h3>
+              <span class="plan-price">
+                <strong class="heading">$20</strong>
+                <span class="plan-price-desc">
+                  <span class="desc">per user</span>
+                  <span class="desc">per month</span>
+                </span>
+              </span>
+              <span class="plan-item-desc desc"
+                >Growing teams up to 20 users.</span
+              >
+              <button class="btn plan-btn">Get started</button>
+              <div class="plan-feature">
+                <h4 class="heading plan-feature-heading">FEATURES</h4>
+                <p class="desc plan-feature-desc">
+                  Everything in basic plus...
+                </p>
+                <div class="plan-feature-list">
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      200+ integrations
+                    </p>
+                  </div>
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      Advanced reporting and analytics
+                    </p>
+                  </div>
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      Up to 20 individual users
+                    </p>
+                  </div>
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      40GB individual data each user
+                    </p>
+                  </div>
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      Priority chat and email support
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="plan-item">
+              <h3 class="heading plan-item-heading">Advanced plan</h3>
+              <span class="plan-price">
+                <strong class="heading">$40</strong>
+                <span class="plan-price-desc">
+                  <span class="desc">per user</span>
+                  <span class="desc">per month</span>
+                </span>
+              </span>
+              <span class="plan-item-desc desc"
+                >Advanced features + unlimited users.</span
+              >
+              <button class="btn plan-btn">Get started</button>
+              <div class="plan-feature">
+                <h4 class="heading plan-feature-heading">FEATURES</h4>
+                <p class="desc plan-feature-desc">
+                  Everything in Business plus...
+                </p>
+                <div class="plan-feature-list">
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      Advanced custom fields
+                    </p>
+                  </div>
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      Audit log and data history
+                    </p>
+                  </div>
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      Unlimited individual users
+                    </p>
+                  </div>
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      Unlimited individual data
+                    </p>
+                  </div>
+                  <div class="plan-feature-item">
+                    <img
+                      src="../assets/img/plan-check.svg"
+                      alt=""
+                      class="plan-feature-icon"
+                    />
+                    <p class="desc plan-feature-item-title">
+                      Personalised+priotity service
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trial">
+        <div class="container trial-container">
+          <span class="heading">Standards & Technology Trusted By:</span>
+          <div class="partners">
+            <img src="../assets/img/partner-1.svg" alt="" />
+            <img src="../assets/img/partner-2.svg" alt="" />
+            <img src="../assets/img/partner-3.svg" alt="" />
+            <img src="../assets/img/partner-4.svg" alt="" />
+            <img src="../assets/img/partner-5.svg" alt="" />
+          </div>
+          <div class="trial-card">
+            <div class="trial-card-content">
+              <h2 class="heading trial-card-heading">
+                Should we design your first popup?
+              </h2>
+              <p class="desc trial-card-desc">
+                Pick a template, customize as you need, and integrate with your
+                other marketing tools.
+              </p>
+              <button class="btn trial-card-btn">Start your free trial</button>
+            </div>
+            <figure class="trial-card-media">
+              <img
+                srcset="../assets/img/trial-img.png 2x"
+                alt="Should we design your first popup?"
+              />
+            </figure>
+            <figure class="trial-card-decor">
+              <img srcset="../assets/img/trial-decor.png 2x" alt="" />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <img
+          srcset="../assets/img/logo.png 2x"
+          alt="Togi"
+          class="footer-logo"
+        />
+        <nav class="footer-nav">
+          <ul class="footer-list">
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">Product</a>
+            </li>
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">Resources</a>
+            </li>
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">About</a>
+            </li>
+            <li class="footer-list">
+              <a href="#!" class="footer-link desc">Help</a>
+            </li>
+          </ul>
+        </nav>
+        <span class="desc copyright">© 2022 UIHUT | All Right Reserved</span>
+      </div>
+    </footer>
+  </body>
+</html>
